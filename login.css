@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Cinzel", serif;
+}
+body{
+    background: #393E46;
+    height: 100vh;
+}
+.navbar h1{
+  font-size: 30px;
+  font-weight: 800;
+}
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    width: 30%;
+    border: 2px solid white;
+}
+.name{
+    background: transparent;
+    margin-left: 30px;
+    border: .2px solid white;
+}
+.navbar h1 {
+
+  margin-bottom: 0.5rem;
+  text-shadow: 4px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.navbar h1{
+  font-size: 40px;
+  position: relative;
+  color: #CD1818;
+}
+/* login*/
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.animated-border {
+  position: relative;
+  width: 100%;
+  padding: 4px; /* space for border effect */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, rgb(35, 144, 233), rgb(229, 182, 233));
+  animation: rotate 4s linear infinite;
+  z-index: 1;
+}
+
+.form-card {
+  position: relative;
+  z-index: 2;
+  background: #0B192C;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #dceff8;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 500px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btn{
+  background: #010038;
+}
+
+button:hover {
+  background-color: #BBE1FA;
+
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-card {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+  input{
+    width: 90%;
+  }
+}
+.btn {
+    /* padding: 12px 30px; */
+    font-size: 16px;
+    width: 110px;
+    background: transparent;
+    border: 2px solid #BBE1FA;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(224, 241, 239);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #BBE1FA;
+    transition: 0.5s all ease-in-out;
+}
+
+.btn:hover::before {
+    height: 100%;
+    top: unset;
+    bottom: 0;
+}
+.btn:hover{
+    color: rgb(3, 1, 14);
+  }
+
