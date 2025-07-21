@@ -130,6 +130,9 @@ button {
 .btn{
   background: #010038;
 }
+input:hover{
+  cursor: pointer;
+}
 
 button:hover {
   background-color: #BBE1FA;
